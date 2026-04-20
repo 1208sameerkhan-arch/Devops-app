@@ -8,15 +8,15 @@ Parameters:
 
   InstanceType:
     Type: String
-    Default: t2.micro
+    Default: t3.micro
 
 Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-0c55b159cbfafe1f0   # change based on region
+      ImageId: ami-07216ac99dc46a187   # change based on region
       InstanceType: !Ref InstanceType
-      KeyName: !Ref KeyName
+      KeyName: !Ref Key-Sam
       SecurityGroups:
         - !Ref InstanceSG
 

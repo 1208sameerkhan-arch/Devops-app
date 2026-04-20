@@ -31,4 +31,4 @@ jobs:
             --stack-name ec2-stack \
             --template-file ec2.yaml \
             --capabilities CAPABILITY_NAMED_IAM \
-            --parameter-overrides KeyName=my-keypair InstanceType=t2.micro
+            --parameter-overrides KeyName=Key-Sam InstanceType=t3.micro
